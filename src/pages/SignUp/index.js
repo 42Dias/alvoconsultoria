@@ -4,7 +4,7 @@ export default function SignUp() {
 
   return (
     <div className="container">
-      <h2>Pagina entrar</h2>
+      <h2>Pagina cadastrar</h2>
       <Link to="/">voltar</Link>
 
     </div>
