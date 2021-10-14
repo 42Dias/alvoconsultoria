@@ -1,34 +1,28 @@
 import { Link } from 'react-router-dom'
-import './styles/home.css'
+import * as S from './styles/style.js'
 
 export default function Home() {
   return (
-    <div className='containerHome'>
-      <div className='bg-primary'>
-        <div className='container'>
-          <section className='content-home'>
+    <S.Main>
+      <S.Background>
+        <S.ContainerMain>
+          <S.ContentHome>
             <article className='d-flex'>
-              <div className='content  col-6'>
-                <h2 className='font-weight-500'>
-                  Sua vida acadêmica descomplicada!
-                </h2>
-                <div className='border-home'></div>
+              <S.Title>
+                <h2>Sua vida acadêmica descomplicada!</h2>
+                <S.BorderHome />
                 <p>
                   Com a Alvo, você tem a tranquilidade e segurança para
                   conquistar a tão sonhada aprovação! Aqui você formata, revisa
                   e traduz seu trabalho sem dor de cabeça!
                 </p>
-                <div className='d-flex align-items-center mt-2'>
-                  <Link to='/cadastrar' href='' className='mr-2 btn-patterns'>
-                    Criar minha conta
-                  </Link>
-                  <Link to='/entrar'>Ja tenho conta!</Link>
-                </div>
-              </div>
+                <a>Criar minha conta</a>
+              </S.Title>
             </article>
-          </section>
-        </div>
-      </div>
-    </div>
+            <Link to='/entrar'>Ja tenho conta!</Link>
+          </S.ContentHome>
+        </S.ContainerMain>
+      </S.Background>
+    </S.Main>
   )
 }
