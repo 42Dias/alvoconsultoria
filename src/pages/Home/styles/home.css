@@ -5,12 +5,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    background: linear-gradient(270deg, #C4C4C4 9.21%, rgba(196, 196, 196, 0) 85.55%);
+
+
+.image-banner {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: linear-gradient(270deg, #C4C4C4 9.21%, rgba(196, 196, 196, 0) 85.55%);
 }
 
 .bg-primary{ 

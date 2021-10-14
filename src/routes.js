@@ -17,6 +17,7 @@ const Routes = () => {
         <Route path='*' component={Home} />
       </Switch>
     </BrowserRouter>
+
   )
 }
 
