@@ -1,0 +1,19 @@
+footer {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+
+  color: #1A1A1A;
+
+  background: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  color: rgba(26, 26, 26, 1);
+}

@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import ForgetPassword from './pages/ForgetPassword'
+import Footer from './components/Footer'
 
 const Routes = () => {
   return (
@@ -16,6 +17,7 @@ const Routes = () => {
         <Route exact path='/esqueceu-a-senha' component={ForgetPassword} />
         <Route path='*' component={Home} />
       </Switch>
+      <Footer />
     </BrowserRouter>
   )
 }

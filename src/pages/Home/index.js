@@ -1,29 +1,34 @@
 import { Link } from 'react-router-dom'
+import './styles/home.css'
 
 export default function Home() {
   return (
-    <body className='bg-primary'>
-      <div className='container'>
-        <section>
-          <article className='d-flex'>
-            <div className='content  col-6'>
-              <h2 className='font-weight-500'>
-                A plataforma número um para consultoria de TCC.
-              </h2>
-              <p>
-                Com a Alvo, você tem a tranquilidade e segurança para conquistar
-                a tão sonhada aprovação!
-              </p>
-              <div className='d-flex align-items-center mt-2'>
-                <a href='' className='mr-2 btn-patterns'>
-                  Criar minha conta
-                </a>
-                <Link to='/entrar'>Ja tenho conta!</Link>
+    <div className='containerHome'>
+      <div className='bg-primary'>
+        <div className='container'>
+          <section className='content-home'>
+            <article className='d-flex'>
+              <div className='content  col-6'>
+                <h2 className='font-weight-500'>
+                  Sua vida acadêmica descomplicada!
+                </h2>
+                <div className='border-home'></div>
+                <p>
+                  Com a Alvo, você tem a tranquilidade e segurança para
+                  conquistar a tão sonhada aprovação! Aqui você formata, revisa
+                  e traduz seu trabalho sem dor de cabeça!
+                </p>
+                <div className='d-flex align-items-center mt-2'>
+                  <Link to='/cadastrar' href='' className='mr-2 btn-patterns'>
+                    Criar minha conta
+                  </Link>
+                  <Link to='/entrar'>Ja tenho conta!</Link>
+                </div>
               </div>
-            </div>
-          </article>
-        </section>
+            </article>
+          </section>
+        </div>
       </div>
-    </body>
+    </div>
   )
 }
