@@ -14,7 +14,7 @@ export const Main = styled.div`
 export const Background = styled.div`
   width: 100vw !important;
   height: 100vh !important;
-  background: url();
+  background: url('/../../img/background.png');
   background-size: cover;
   background-position: center;
 `

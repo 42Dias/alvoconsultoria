@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <S.Main>
       <S.Background>
-        <img src='' alt='background' />
         <S.ContainerMain>
           <S.ContentHome>
             <article className='d-flex'>
