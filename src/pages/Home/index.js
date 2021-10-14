@@ -1,29 +1,29 @@
 import { Link } from 'react-router-dom'
+import * as S from './styles/style.js'
 
 export default function Home() {
   return (
-    <body className='bg-primary'>
-      <div className='container'>
-        <section>
-          <article className='d-flex'>
-            <div className='content  col-6'>
-              <h2 className='font-weight-500'>
-                A plataforma número um para consultoria de TCC.
-              </h2>
-              <p>
-                Com a Alvo, você tem a tranquilidade e segurança para conquistar
-                a tão sonhada aprovação!
-              </p>
-              <div className='d-flex align-items-center mt-2'>
-                <a href='' className='mr-2 btn-patterns'>
-                  Criar minha conta
-                </a>
-                <Link to='/entrar'>Ja tenho conta!</Link>
-              </div>
-            </div>
-          </article>
-        </section>
-      </div>
-    </body>
+    <S.Main>
+      <S.Background>
+        <img src='' alt='background' />
+        <S.ContainerMain>
+          <S.ContentHome>
+            <article className='d-flex'>
+              <S.Title>
+                <h2>Sua vida acadêmica descomplicada!</h2>
+                <S.BorderHome />
+                <p>
+                  Com a Alvo, você tem a tranquilidade e segurança para
+                  conquistar a tão sonhada aprovação! Aqui você formata, revisa
+                  e traduz seu trabalho sem dor de cabeça!
+                </p>
+                <a>Criar minha conta</a>
+              </S.Title>
+            </article>
+            <Link to='/entrar'>Ja tenho conta!</Link>
+          </S.ContentHome>
+        </S.ContainerMain>
+      </S.Background>
+    </S.Main>
   )
 }
