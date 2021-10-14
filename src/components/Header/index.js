@@ -31,14 +31,22 @@ export default function Header() {
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link btn-patterns' href='#'>
+                <Link
+                  to='/cadastrar'
+                  className='nav-link btn-patterns'
+                  href='#'
+                >
                   Criar minha conta
-                </a>
+                </Link>
               </li>
               <li className='nav-item'>
-                <a className='nav-link btn-patterns-outline' href='#'>
+                <Link
+                  to='/entrar'
+                  className='nav-link btn-patterns-outline'
+                  href='#'
+                >
                   Efetuar login
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
