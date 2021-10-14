@@ -23,3 +23,4 @@ Open http://localhost:3000 to view it in the browser.
 * [ESLint](https://eslint.org)
 * [EditorConfig](https://editorconfig.org)
 * [React router dom](https://www.npmjs.com/package/react-router-dom)
+* [Prettier](https://prettier.io/)
