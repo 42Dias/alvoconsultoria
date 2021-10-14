@@ -1,24 +1,22 @@
-import { Link } from "react-router-dom";
-
 export default function Home() {
   return (
-    <body className="bg-primary">
-      <div class="container">
+    <body className='bg-primary'>
+      <div className='container'>
         <section>
-          <article class="d-flex">
-            <div class="content  col-6">
-              <h2 class="font-weight-500">
+          <article className='d-flex'>
+            <div className='content  col-6'>
+              <h2 className='font-weight-500'>
                 A plataforma número um para consultoria de TCC.
               </h2>
               <p>
                 Com a Alvo, você tem a tranquilidade e segurança para conquistar
                 a tão sonhada aprovação!
               </p>
-              <div class="d-flex align-items-center mt-2">
-                <a href="" class="mr-2 btn-patterns">
+              <div className='d-flex align-items-center mt-2'>
+                <a href='' className='mr-2 btn-patterns'>
                   Criar minha conta
                 </a>
-                <a href="" class="link-conta">
+                <a href='' className='link-conta'>
                   Ja tenho conta!
                 </a>
               </div>
@@ -27,5 +25,5 @@ export default function Home() {
         </section>
       </div>
     </body>
-  );
+  )
 }
