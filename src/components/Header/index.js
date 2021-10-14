@@ -26,14 +26,17 @@ export default function Header() {
           <div className='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul className='nav justify-content-end'>
               <li className='nav-item'>
-                <a className='nav-link active link-conta' href='#'>
+                <a
+                  className='nav-link professional-account active link-conta'
+                  href='#'
+                >
                   Sou profissional
                 </a>
               </li>
               <li className='nav-item'>
                 <Link
                   to='/cadastrar'
-                  className='nav-link btn-patterns'
+                  className='nav-link btn-patterns create-account'
                   href='#'
                 >
                   Criar minha conta

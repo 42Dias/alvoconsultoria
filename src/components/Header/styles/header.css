@@ -2,21 +2,6 @@
   flex: 1;
   display: flex;
 }
-footer {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 15px;
-
-  color: #1A1A1A;
-
-  background: white;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .btn-patterns {
   padding: 8px 10px;
@@ -29,16 +14,22 @@ footer {
   color: #ffffff;
 }
 
-.btn-patterns-outline {
+a.btn-patterns-outline {
   padding: 8px 10px;
   border-radius: 10px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid;
+  border: 1px solid #D51072;
   margin: 0px 10px;
   color: #D51072;
+}
+
+a.btn-patterns-outline:hover {
+  transition: .6s;
+  border: 1px solid rgb(138, 7, 72);
+  color: rgb(138, 7, 72);
 }
 
 .btn-patterns .btn-patterns-outline:hover {
@@ -59,4 +50,26 @@ footer {
   text-decoration-line: underline;
 
   color: #232323;
+}
+
+a.professional-account {
+  color: #333333;
+  text-decoration: underline;
+  transition: .5s;
+}
+
+a.professional-account:hover {
+  transition: .5s;
+  color: #0c0c0c;
+  text-decoration: none;
+}
+
+a.create-account {
+  color: white;
+}
+
+a.create-account:hover {
+  transition: .6s;
+  color: white;
+  background: rgb(138, 7, 72);
 }

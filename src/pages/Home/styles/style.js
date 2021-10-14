@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import banner from './../../img/backgroud.png'
 
 export const Main = styled.div`
   height: 85vh !important;
@@ -14,7 +15,7 @@ export const Main = styled.div`
 export const Background = styled.div`
   width: 100vw !important;
   height: 100vh !important;
-  background: url('/../../img/background.png');
+  background-image: url(${banner});
   background-size: cover;
   background-position: center;
 `
@@ -32,11 +33,8 @@ export const ContentHome = styled.section`
   transform: translate(6%, -50%);
 `
 
-export const BorderHome = styled.div`
-  width: 217px;
-  height: 6px;
-  background: #d51072;
-  border-radius: 13px;
+export const Buttons = styled.div`
+  display: flex;
 `
 
 export const Title = styled.div`
@@ -61,6 +59,7 @@ export const Title = styled.div`
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
     letter-spacing: 0.3px;
     font-size: 14px;
     width: 152px;
@@ -68,5 +67,20 @@ export const Title = styled.div`
     background: #d51072;
     border-radius: 10px;
     cursor: pointer;
+    color: white !important;
+    text-decoration: none;
   }
+
+  a:nth-child(2) {
+    color: #d51072 !important;
+    text-decoration: underline;
+    background: transparent;
+  }
+`
+
+export const BorderHome = styled.div`
+  width: 217px;
+  height: 6px;
+  background: #d51072;
+  border-radius: 13px;
 `

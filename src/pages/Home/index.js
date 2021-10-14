@@ -16,10 +16,12 @@ export default function Home() {
                   conquistar a tão sonhada aprovação! Aqui você formata, revisa
                   e traduz seu trabalho sem dor de cabeça!
                 </p>
-                <a>Criar minha conta</a>
+                <S.Buttons>
+                  <Link to='/cadastrar'>Criar minha conta</Link>
+                  <Link to='/entrar'>Ja tenho conta!</Link>
+                </S.Buttons>
               </S.Title>
             </article>
-            <Link to='/entrar'>Ja tenho conta!</Link>
           </S.ContentHome>
         </S.ContainerMain>
       </S.Background>
