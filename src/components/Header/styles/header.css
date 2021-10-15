@@ -32,6 +32,10 @@ a.btn-patterns-outline:hover {
   color: rgb(138, 7, 72);
 }
 
+a.btn-patterns-outline:focus {
+  color: rgb(138, 7, 72);
+}
+
 .btn-patterns .btn-patterns-outline:hover {
   text-decoration: none;
 }
@@ -64,6 +68,10 @@ a.professional-account:hover {
   text-decoration: none;
 }
 
+a.professional-account:focus {
+  color: #0c0c0c;
+}
+
 a.create-account {
   color: white;
 }
@@ -72,4 +80,8 @@ a.create-account:hover {
   transition: .6s;
   color: white;
   background: rgb(138, 7, 72);
+}
+
+a.create-account:focus {
+  color: white;
 }

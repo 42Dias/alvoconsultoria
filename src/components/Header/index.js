@@ -26,12 +26,13 @@ export default function Header() {
           <div className='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul className='nav justify-content-end'>
               <li className='nav-item'>
-                <a
+                <Link
+                  to='/seja-provedor'
                   className='nav-link professional-account active link-conta'
                   href='#'
                 >
                   Sou profissional
-                </a>
+                </Link>
               </li>
               <li className='nav-item'>
                 <Link

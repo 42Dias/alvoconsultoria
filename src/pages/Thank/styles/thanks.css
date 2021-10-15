@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: linear-gradient(270deg, #C4C4C4 9.21%, rgba(196, 196, 196, 0) 85.55%);
+}
+
+.container {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.bg-thanks{
+    background-image: url('./../../img/banner-login.svg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+.containerLogin {
+  height: 85vh !important;
+  
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: linear-gradient(270deg, #C4C4C4 9.21%, rgba(196, 196, 196, 0) 85.55%);
+}
+
+.content-login-form {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+}
