@@ -22,7 +22,7 @@ body {
 }
 
 .bg-register{
-    background-image: url('./../../img/backgroud-register.png');
+    background-image: url('./../../img/background-register.png');
     background-size: cover;
     background-position: center;
     width: 100vw !important;
@@ -31,7 +31,7 @@ body {
 
 .containerSignUp {
   height: 85vh !important;
-  
+
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -40,7 +40,7 @@ body {
 
 .content-login-form {
   position: absolute;
-  top: 50%; 
+  top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
@@ -122,12 +122,12 @@ label {
 }
 
 .bg-register{
-    background-image: url('./../../img/backgroud-register.png');
+    background-image: url('./../../img/background-register.png');
     background-size: cover;
     background-position: center;
 }
 .bg-reset{
-    background-image: url('./../../img/backgroud-reset.png');
+    background-image: url('./../../img/background-reset.png');
     background-size: cover;
     background-position: center;
 }
