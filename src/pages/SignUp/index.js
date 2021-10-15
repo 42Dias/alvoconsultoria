@@ -1,17 +1,16 @@
 import './styles/signup.css'
+import * as S from './styles/style'
 
 export default function SignUp() {
   return (
-    <div className='containerSignUp'>
-      <div className='bg-register'>
-        <div className='container'>
-          <section className='content-login-form'>
-            <div className='card p-5'>
-              <h2 className='title-card'>Não tem uma conta?</h2>
-              <p className='subtitle'>
-                Insira seus dados para começarmos o cadastro
-              </p>
-              <form action='' className='d-flex flex-column'>
+    <S.ContainerSignUp>
+      <S.Background>
+        <S.Container>
+          <S.ContentLoginForm>
+            <S.Card>
+              <h2>Não tem uma conta?</h2>
+              <p>Insira seus dados para começarmos o cadastro</p>
+              <form action=''>
                 <input
                   type='text'
                   className='form'
@@ -41,14 +40,14 @@ export default function SignUp() {
                   name='senha'
                 />
 
-                <button type='submit' id='btn-submit' className='btn-submit'>
+                <button type='submit' id='btn-submit'>
                   Continuar cadastro
                 </button>
               </form>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
+            </S.Card>
+          </S.ContentLoginForm>
+        </S.Container>
+      </S.Background>
+    </S.ContainerSignUp>
   )
 }
