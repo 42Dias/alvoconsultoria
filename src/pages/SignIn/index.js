@@ -1,54 +1,39 @@
-import './styles/login.css'
 import { Link } from 'react-router-dom'
+import * as S from './styles/style'
 
 export default function SignIn() {
   return (
-    <div className='containerLogin'>
-      <div className='bg-login'>
-        <div className='container'>
-          <section className='content-login-form'>
-            <div className='card p-5 '>
-              <h2 className='title-card'>Bem-vindo de volta.</h2>
-              <p className='subtitle'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-              </p>
-              <form className='d-flex flex-column'>
-                <input
-                  type='email'
-                  className='form'
-                  placeholder='Email'
-                  required
-                  name='email'
-                />
+    <S.ContainerLogin>
+      <S.Background>
+        <S.Container>
+          <S.ContentLoginForm>
+            <S.Card>
+              <h2>Bem-vindo de volta</h2>
+              <p>Informe seu e-mail e senha para continuar</p>
+              <S.Form>
+                <input type='email' placeholder='Email' required name='email' />
                 <input
                   type='password'
-                  className='form'
                   placeholder='Senha'
                   required
                   name='senha'
                 />
-                <div className='d-flex justify-content-between'>
-                  <div className='form-group d-flex align-items-center'>
-                    <input type='checkbox' id='renamber' name='renamber' />
-                    <label htmlFor='renamber' className='p-0 m-0'>
-                      Lembrar minha conta
-                    </label>
-                  </div>
+                <S.ForgotPassword>
+                  <input type='checkbox' id='renamber' name='renamber' />
+                  <label htmlFor='renamber'>Lembrar minha conta</label>
                   <Link to='/esqueceu-a-senha' className='link-reset-password'>
                     Esqueceu sua senha?
                   </Link>
-                </div>
-                <button type='submit' className='btn-submit'>
-                  Entrar
-                </button>
+                </S.ForgotPassword>
+                <button>Entrar</button>
                 <Link to='/cadastrar' href='' className='register'>
-                  Novo por aqui? <strong>Crie sua conta</strong>
+                  Novo por aqui?<strong> Crie sua conta</strong>
                 </Link>
-              </form>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
+              </S.Form>
+            </S.Card>
+          </S.ContentLoginForm>
+        </S.Container>
+      </S.Background>
+    </S.ContainerLogin>
   )
 }
