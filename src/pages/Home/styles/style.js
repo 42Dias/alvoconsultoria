@@ -31,6 +31,12 @@ export const ContentHome = styled.section`
   top: 50%;
   left: 6%;
   transform: translate(6%, -50%);
+
+  @media (max-width: 768px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 `
 
 export const Buttons = styled.div`
@@ -76,6 +82,20 @@ export const Title = styled.div`
     text-decoration: underline;
     background: transparent;
   }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 28px;
+      text-align: center;
+      width: 100% !important;
+    }
+
+    p {
+      font-size: 14px;
+      text-align: center;
+      padding: 20px 0;
+    }
+  }
 `
 
 export const BorderHome = styled.div`
@@ -83,4 +103,8 @@ export const BorderHome = styled.div`
   height: 6px;
   background: #d51072;
   border-radius: 13px;
+
+  @media (max-width: 768px) {
+    margin: 10px auto;
+  }
 `
