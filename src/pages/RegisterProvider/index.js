@@ -1,16 +1,17 @@
 import { Link } from 'react-router-dom'
 import './styles/registerprovider.css'
 import circle from './../img/cicle.svg'
+import * as S from './styles/styles'
 
 export default function RegisterProvider() {
   return (
     <>
-      <section className='banner'>
-        <div className='container content-banner'>
-          <article className='content-banner'>
+      <S.Banner>
+        <S.ContainerBanner>
+          <S.ContentBanner>
             <h1>Teste para seleção:</h1>
             <h2>Formatação de artigos</h2>
-            <span className='border-bottom'></span>
+            <span></span>
             <p>
               Na Alvo Consultoria, presamos pela excelência dos trabalhos
               prestados. Desta forma, ao prestarmos um serviço, observamos todos
@@ -21,14 +22,14 @@ export default function RegisterProvider() {
               respeito dos seus conhecimentos sobre Word e capacidade se seguir
               orientações fornecidas para formatar um trabalho.
             </p>
-          </article>
-          <img src={circle} className='cicle' alt='' />
-        </div>
-      </section>
+          </S.ContentBanner>
+          <img src={circle} alt='' />
+        </S.ContainerBanner>
+      </S.Banner>
 
-      <div className='container'>
-        <section className='normas-formatacao mt-5'>
-          <article className='colsm-12 col-md-10 col-lg-10'>
+      <S.Container>
+        <S.FormattingStandards>
+          <S.FormattingStandards>
             <h2>Normas de Formatação</h2>
             <p>
               Anexar em Documento Original o texto completo: iniciar com o
@@ -54,13 +55,13 @@ export default function RegisterProvider() {
               Quando os autores forem mais de seis (6), indicar apenas os seis
               primeiros, acrescentando a expressão et al.
             </p>
-          </article>
-        </section>
-      </div>
+          </S.FormattingStandards>
+        </S.FormattingStandards>
+      </S.Container>
 
       <hr />
 
-      <section className='container normas-formatacao mt-5'>
+      <S.FormattingStandardsContainer>
         <article className='m-0 col-sm-12 col-md-10 col-lg-12'>
           <h2>Exemplos</h2>
           <div className='d-flex justify-content-between flex-xs-column flex-md-column flex-lg-row'>
@@ -110,7 +111,7 @@ export default function RegisterProvider() {
             </div>
           </div>
         </article>
-      </section>
+      </S.FormattingStandardsContainer>
 
       <div className='d-flex align-items-center justify-content-center proximo-passo'>
         <Link
