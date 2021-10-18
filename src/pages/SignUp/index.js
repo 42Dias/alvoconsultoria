@@ -10,7 +10,7 @@ export default function SignUp() {
             <S.Card>
               <h2>Não tem uma conta?</h2>
               <p>Insira seus dados para começarmos o cadastro</p>
-              <form action=''>
+              <form>
                 <input
                   type='text'
                   className='form'

@@ -43,12 +43,12 @@ export const Card = styled.div`
   );
   border-radius: 20px;
   padding: 50px;
-  width: 514px;
-
+  width: 500px;
+  height: 500px;
   h2 {
     text-align: center;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 45px;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #000000;
@@ -66,22 +66,73 @@ export const Card = styled.div`
     border: none;
     margin: 15px 0px;
     outline: none;
-    width: 100%;
   }
 
   input {
     font-size: 17px;
     color: rgba(60, 60, 67, 0.3);
-    padding: 15px 0 18px 0;
+    padding: 8px 0 8px 0;
+    width: 384px;
   }
 
   button {
     color: white;
-    width: 384px;
-    height: 60px;
+    width: 180px;
+    height: 48px;
     background: #d51072;
     border-radius: 10px;
     border: none;
     margin-top: 53px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    width: 300px;
+    height: 500px;
+    padding: 30px 30px;
+    h2 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    input {
+      font-size: 14px;
+      color: rgba(60, 60, 67, 0.3);
+      padding: 2px 0 2px 0;
+      width: 100% !important;
+    }
+
+    form button {
+      margin: 12px auto;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    width: 300px;
+    height: 440px;
+    padding: 30px 30px;
+    h2 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    input {
+      font-size: 14px;
+      color: rgba(60, 60, 67, 0.3);
+      padding: 0;
+      width: 100% !important;
+    }
+
+    form button {
+      margin: 12px auto;
+      font-size: 14px;
+    }
   }
 `

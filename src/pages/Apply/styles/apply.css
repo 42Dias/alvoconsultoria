@@ -10,7 +10,6 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background: linear-gradient(270deg, #C4C4C4 9.21%, rgba(196, 196, 196, 0) 85.55%);
 }
 
 .container {
@@ -36,7 +35,6 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  background: linear-gradient(270deg, #C4C4C4 9.21%, rgba(196, 196, 196, 0) 85.55%);
 }
 
 .card {

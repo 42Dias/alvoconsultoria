@@ -15,4 +15,14 @@ export const Footer = styled.footer`
   p {
     margin: 40px;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    p {
+      padding: 5px 0 0 0;
+    }
+    span {
+      padding: 0 0 20px 0;
+    }
+  }
 `
