@@ -1,62 +1,56 @@
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { ReactComponent as CloseMenu } from './img/menu-close.svg'
+import { ReactComponent as MenuIcon } from './img/menu.svg'
+import { ReactComponent as Logo } from './img/logo.svg'
 import './styles/header.css'
-// import * as S from './styles/styles'
-
-import logo from './img/logo.svg'
+import * as C from './../../styles/global'
 
 export default function Header() {
+  const [click, setClick] = useState(false)
+  const handleClick = () => setClick(!click)
+  const closeMobileMenu = () => setClick(false)
   return (
-    <header>
-      <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-        <div className='container'>
-          <Link to='/' class='navbar-brand' href=''>
-            <img src={logo} alt='' />
-          </Link>
-          <button
-            className='navbar-toggler'
-            type='button'
-            data-toggle='collapse'
-            data-target='#navbarSupportedContent'
-            aria-controls='navbarSupportedContent'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
-          >
-            <span className='navbar-toggler-icon' />
-          </button>
+    <C.Container>
+      <div className='center-header'>
+        <header>
+          <div className='logo-container'>
+            <Link to='/'>
+              <Logo className='logo' />
+            </Link>
+          </div>
 
-          <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-            <ul className='nav justify-content-end'>
-              <li className='nav-item'>
-                <Link
-                  to='/seja-provedor'
-                  className='nav-link professional-account active link-conta'
-                  href='#'
-                >
+          <nav>
+            <ul className={click ? 'nav-options active' : 'nav-options'}>
+              <li className='option' onClick={closeMobileMenu}>
+                <Link className='professional-account' to='/seja-provedor'>
                   Sou profissional
                 </Link>
               </li>
-              <li className='nav-item'>
-                <Link
-                  to='/cadastrar'
-                  className='nav-link btn-patterns create-account'
-                  href='#'
-                >
+
+              <li className='option' onClick={closeMobileMenu}>
+                <Link className='btn-patterns' to='/cadastrar'>
                   Criar minha conta
                 </Link>
               </li>
-              <li className='nav-item'>
-                <Link
-                  to='/entrar'
-                  className='nav-link btn-patterns-outline'
-                  href='#'
-                >
+
+              <li className='option' onClick={closeMobileMenu}>
+                <Link className='create-account' to='/entrar'>
                   Efetuar login
                 </Link>
               </li>
             </ul>
+          </nav>
+
+          <div className='mobile-menu' onClick={handleClick}>
+            {click ? (
+              <CloseMenu className='menu-icon' />
+            ) : (
+              <MenuIcon className='menu-icon' />
+            )}
           </div>
-        </div>
-      </nav>
-    </header>
+        </header>
+      </div>
+    </C.Container>
   )
 }

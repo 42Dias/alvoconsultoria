@@ -1,10 +1,76 @@
-.nav {
-  flex: 1;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 20px;
+}
+
+
+nav li {
+  margin-left: 30px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #303030;
+  margin-top: 12px;
+}
+
+nav li a {
+  color: #303030;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.option button {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white !important;
+  border: 0;
+  background: #2e54ff;
+  border-radius: 20px;
+}
+
+.option button:hover {
+  transition: 0.7s;
+  background: #0125c7;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 92px;
+  height: 50px;
+}
+
+.nav-options {
   display: flex;
 }
 
+.mobile-option {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
 .btn-patterns {
-  padding: 8px 10px;
+  padding: 10px 10px;
   background: #D51072;
   border-radius: 10px;
   text-align: center;
@@ -12,31 +78,20 @@
   align-items: center;
   justify-content: center;
   color: #ffffff;
+  font-size: 14px;
 }
 
-a.btn-patterns-outline {
-  padding: 8px 10px;
-  border-radius: 10px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #D51072;
-  margin: 0px 10px;
-  color: #D51072;
-}
-
-a.btn-patterns-outline:hover {
+a.btn-patterns:hover {
   transition: .6s;
-  border: 1px solid rgb(138, 7, 72);
+  background: #c00f67;
+  color: #ffffff;
+}
+
+a.btn-patterns:focus {
   color: rgb(138, 7, 72);
 }
 
-a.btn-patterns-outline:focus {
-  color: rgb(138, 7, 72);
-}
-
-.btn-patterns .btn-patterns-outline:hover {
+.btn-patterns .btn-patterns:hover {
   text-decoration: none;
 }
 
@@ -60,6 +115,7 @@ a.professional-account {
   color: #333333;
   text-decoration: underline;
   transition: .5s;
+  font-size: 14px;
 }
 
 a.professional-account:hover {
@@ -73,15 +129,110 @@ a.professional-account:focus {
 }
 
 a.create-account {
-  color: white;
+  border: 1px solid #D51072;
+  padding: 10px 28px;
+  color: #D51072;
+  border-radius: 10px;
+  font-size: 14px;
 }
 
 a.create-account:hover {
   transition: .6s;
   color: white;
-  background: rgb(138, 7, 72);
 }
 
 a.create-account:focus {
   color: white;
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    height: 80px;
+  }
+
+  .logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-options {
+    padding-left: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 50px;
+    list-style-type: none;
+  }
+  .mobile-option {
+    display: none;
+  }
+  .option :hover {
+    color: white;
+  }
+  .mobile-menu {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+
+    header {
+      padding: 0px 10px;
+    }
+
+    .logo {
+      width: 60px;
+      height: 45px;
+    }
+
+    .nav-options {
+      display: flex;
+      width: 100%;
+      height: 200px;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 0;
+      transition: all 0.5s ease;
+      flex-direction: column;
+      list-style-type: none;
+      grid-gap: 0px;
+    }
+
+    .nav-options.active {
+      background: white;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease-out;
+      z-index: 1;
+      align-content: center;
+      padding-left: 0px;
+    }
+
+    .menu-icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    .option {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 5vw;
+      padding: 20px 0px;
+    }
+  }
+  
+  .mobile-menu {
+    display: block;
+  }
 }
