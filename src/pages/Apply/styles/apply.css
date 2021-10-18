@@ -10,7 +10,6 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background: linear-gradient(270deg, #C4C4C4 9.21%, rgba(196, 196, 196, 0) 85.55%);
 }
 
 .container {
@@ -32,11 +31,10 @@ body {
 
 .containerApply {
   height: 85vh !important;
-  
+
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  background: linear-gradient(270deg, #C4C4C4 9.21%, rgba(196, 196, 196, 0) 85.55%);
 }
 
 .card {
@@ -115,7 +113,7 @@ label {
 
 .content-apply-form {
   position: absolute;
-  top: 50%; 
+  top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }

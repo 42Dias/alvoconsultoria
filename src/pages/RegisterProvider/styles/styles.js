@@ -75,6 +75,27 @@ export const FormattingStandards = styled.section`
   }
 `
 
-export const FormattingStandardsContainer = styled.section`
-  margin-top: 50px;
+export const FormattingStandardsContainer = styled.section``
+
+export const Button = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background: #f2f2f2;
+
+  a {
+    padding: 10px 100px;
+    font-weight: 600;
+    font-size: 20px;
+
+    color: #ffffff;
+    background: #d51072;
+    border-radius: 10px;
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+    }
+  }
 `
