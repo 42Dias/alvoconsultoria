@@ -1,19 +1,18 @@
-// import { Link } from 'react-router-dom'
-import './styles/forgetpassword.css'
+import * as S from './styles/style'
 
 export default function ForgetPassword() {
   return (
-    <div className='containerForget'>
-      <div className='bg-reset'>
-        <div className='container'>
-          <section className='content-login-form'>
-            <div className='card p-5'>
-              <h2 className='title-card'>Esqueceu sua senha?</h2>
-              <p className='subtitle'>
+    <S.ContainerForget>
+      <S.Background>
+        <S.Container>
+          <S.ContentLoginForm>
+            <S.Card>
+              <h2>Esqueceu sua senha?</h2>
+              <p>
                 Insira o email de sua conta para conseguirmos recuperar sua
                 conta.
               </p>
-              <form action='' className='d-flex flex-column align-items-center'>
+              <S.Form action=''>
                 <input
                   type='email'
                   className='form'
@@ -21,15 +20,12 @@ export default function ForgetPassword() {
                   required
                   name='email'
                 />
-
-                <button type='submit' className='btn-submit'>
-                  Continuar cadastro
-                </button>
-              </form>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
+                <button type='submit'>Recuperar minha senha</button>
+              </S.Form>
+            </S.Card>
+          </S.ContentLoginForm>
+        </S.Container>
+      </S.Background>
+    </S.ContainerForget>
   )
 }
