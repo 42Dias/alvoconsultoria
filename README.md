@@ -3,7 +3,7 @@
 ```
 git clone git@github.com:42Dias/alvoconsultoria.git
 ```
-### install the dependencies
+### Install the dependencies
 ```
 yarn
 # or
