@@ -1,0 +1,142 @@
+.banner {
+  background: url('./../../img/banner2.svg');
+  height: 584px;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.content-banner {
+  height: 100%;
+}
+
+.content-banner h1 {
+  z-index: 9999;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FFFFFF;
+}
+
+.content-banner h2 {
+  z-index: 9999;
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 35px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FFFFFF;
+}
+
+.content-banner p {
+  z-index: 9999;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 150%;
+  /* or 25px */
+  color: #FFFFFF;
+}
+
+
+.border-bottom {
+  background: #D51072;
+  border-radius: 13px;
+  width: 217px;
+  height: 6px;
+  margin: 0px 1px 20px 0px;
+}
+
+
+.cicle{
+  position: absolute;
+  right: 0;
+  top: 345px;
+}
+
+.normas-formatacao h2{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 45px;
+  /* or 129% */
+
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: #D51072;
+}
+
+
+.normas-formatacao p{
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+
+  color: #666666;
+
+}
+
+.proximo-passo{
+  height: 200px;
+  background: yellow;
+}
+
+.btn-patterns-next {
+
+  padding: 10px 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  letter-spacing: -0.02em;
+
+  color: #FFFFFF;
+  background: #D51072;
+  border: 0px solid;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 1000px) {
+
+
+  .form-select {
+      width: 100%;
+      margin: 4px 0px !important;
+  }
+
+  .content-left {
+      margin-bottom: 10px;
+  }
+
+  .flex-xs-column {
+      flex-direction: column;
+  }
+}
+
+@media (min-width: 1000px) {
+  .form-select {
+      width: 100%;
+      margin: 4px 0px !important;
+  }
+
+  .flex-xs-column {
+      flex-direction: column;
+  }
+}

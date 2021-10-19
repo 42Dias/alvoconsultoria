@@ -30,7 +30,6 @@ body {
 
 .containerSignUp {
   height: 85vh !important;
-
   display: flex;
   justify-content: space-between;
   flex-direction: column;

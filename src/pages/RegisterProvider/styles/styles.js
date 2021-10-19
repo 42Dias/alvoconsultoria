@@ -203,3 +203,25 @@ export const ContentBtn = styled.div`
     }
   }
 `
+
+export const Button = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background: #f2f2f2;
+
+  a {
+    font-weight: 600;
+    font-size: 20px;
+
+    color: #ffffff;
+    background: #d51072;
+    border-radius: 10px;
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+`
