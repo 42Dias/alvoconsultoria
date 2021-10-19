@@ -5,10 +5,12 @@ header {
   height: 70px;
   padding: 0 20px;
   margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 4%;
 }
 
 nav li {
-  margin-left: 30px;
+  margin-left: 15px;
   font-size: 12px;
   line-height: 18px;
   color: #303030;

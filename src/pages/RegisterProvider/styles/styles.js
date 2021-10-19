@@ -29,8 +29,11 @@ export const ContainerBanner = styled.div`
 export const ContentBanner = styled.article`
   position: absolute;
   top: 55%;
-  left: 6%;
-  transform: translate(6%, -50%);
+  left: 0%;
+  transform: translate(0%, -50%);
+  max-width: 1320px;
+  padding: 0 4%;
+  margin: 0 auto;
   h1 {
     z-index: 9999;
     font-weight: bold;
@@ -93,6 +96,8 @@ export const Border = styled.div`
 export const Container = styled.div`
   background: #fff;
   text-align: left;
+  max-width: 1320px;
+  padding: 0 4%;
 `
 
 export const FormattingStandards = styled.section`
@@ -122,19 +127,12 @@ export const FormattingStandards = styled.section`
 `
 
 export const FormattingStandardsContainer = styled.section`
+  max-width: 1320px;
+  margin: 0 auto;
   margin-top: 50px;
   h2 {
     color: rgba(213, 16, 114, 1);
     font-weight: bold;
-    padding: 20px 0;
-  }
-  .padding-exemplos strong {
-    color: rgba(102, 102, 102, 1);
-    margin-top: 20px !important;
-  }
-  .col-lg-5 p {
-    color: rgba(102, 102, 102, 1);
-    font-size: 16px;
     padding: 20px 0;
   }
   @media (max-width: 768px) {
@@ -183,18 +181,22 @@ export const ContentBtn = styled.div`
 
 export const ArticleContainer = styled.article`
   display: flex;
+  flex-direction: column;
 `
 
 export const ArticleProvider = styled.article`
   display: flex;
+  flex-direction: column;
 `
 
 export const BoxExemples = styled.article`
   display: flex;
+  flex-direction: column;
 `
 
 export const ContentExemples = styled.article`
   display: flex;
+  flex-direction: column;
 `
 
 export const Button = styled.div`
