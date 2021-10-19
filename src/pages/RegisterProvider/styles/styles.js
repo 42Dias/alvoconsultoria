@@ -203,3 +203,19 @@ export const ContentBtn = styled.div`
     }
   }
 `
+
+export const ArticleContainer = styled.article`
+  display: flex;
+`
+
+export const ArticleProvider = styled.article`
+  display: flex;
+`
+
+export const BoxExemples = styled.article`
+  display: flex;
+`
+
+export const ContentExemples = styled.article`
+  display: flex;
+`

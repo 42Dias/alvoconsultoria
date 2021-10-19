@@ -63,10 +63,10 @@ export default function RegisterProvider() {
 
       <S.FormattingStandardsContainer>
         <C.Container>
-          <article className='m-0 col-sm-12 col-md-10 col-lg-12'>
+          <S.ArticleContainer>
             <h2>Exemplos</h2>
-            <div className='d-flex justify-content-between flex-xs-column flex-md-column flex-lg-row'>
-              <div className='p-0 col-sm-12 padding-exemplos col-md-12 col-lg-5'>
+            <S.ContentExemples>
+              <S.BoxExemples>
                 <strong>a) LIVRO</strong>
                 <p>
                   Acha PN, Szyfres B. Zoonosis y enfermedades transmisibles
@@ -87,8 +87,8 @@ export default function RegisterProvider() {
                   Lima AMVMD, et al. Spread and diversity of human populations
                   in Bahia, Brazil. Human Biology. 1982;54:329-41.
                 </p>
-              </div>
-              <div className='p-0 col-sm-12 padding-exemplos col-md-12 col-lg-5'>
+              </S.BoxExemples>
+              <S.BoxExemples>
                 <strong>D) TESE E DISSERTAÇÃO</strong>
 
                 <p>
@@ -113,9 +113,9 @@ export default function RegisterProvider() {
                   “citado em”]. Endereço do site com a expressão “Disponível
                   em:” .
                 </p>
-              </div>
-            </div>
-          </article>
+              </S.BoxExemples>
+            </S.ContentExemples>
+          </S.ArticleContainer>
         </C.Container>
       </S.FormattingStandardsContainer>
 
@@ -124,7 +124,7 @@ export default function RegisterProvider() {
       <S.FormattingStandardsContainer>
         <S.FormattingStandards>
           <C.Container>
-            <article className='colsm-12  col-md-10 col-lg-10'>
+            <S.ArticleProvider>
               <h2>Exemplo de texto</h2>
               <p>
                 Sangenis LFC, Oliveira EFR, Carreiro HJS, editores. Formação de
@@ -190,16 +190,13 @@ export default function RegisterProvider() {
                 (Baseado nas normas de formatação da Revista Baiana de saúde
                 pública)
               </p>
-            </article>
+            </S.ArticleProvider>
           </C.Container>
         </S.FormattingStandards>
       </S.FormattingStandardsContainer>
 
       <S.ContentBtn>
-        <Link
-          to='/seja-provedor/cadastro-provedor/formatacao'
-          className='btn-patterns-next'
-        >
+        <Link to='/seja-provedor/cadastro-provedor/formatacao'>
           Próximo passo
         </Link>
       </S.ContentBtn>
