@@ -6,8 +6,8 @@ export default function Formatting() {
     <S.ColorBackground>
       <br />
       <S.BannerFormating>
-        <div className='container'>
-          <article className='container content-banner-formatting'>
+        <C.Container>
+          <S.ContentArticle>
             <h1>Formatação de artigos</h1>
             <S.BorderBottom />
             <S.DownDoc>
@@ -18,8 +18,8 @@ export default function Formatting() {
             <S.AddDoc>
               <a href=''>Clique aqui para anexar seu documento formatado.</a>
             </S.AddDoc>
-          </article>
-        </div>
+          </S.ContentArticle>
+        </C.Container>
       </S.BannerFormating>
 
       <S.FormattingStandards>

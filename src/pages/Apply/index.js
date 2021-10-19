@@ -11,25 +11,24 @@ export default function Apply() {
             <S.Card>
               <h2>Gostaria de se candidatar para outra vaga?</h2>
               <S.FormContent>
-                <div className='d-flex align-items-center justify-content-center mt-4'>
-                  <label className='mb-0 mr-2'>Sim</label>
-                  <input type='checkbox' className='mr-2' />
-                  <label className='mb-0 mr-2'>Não</label>
-                  <input type='checkbox' className='mr-2' />
-                </div>
+                <S.ContentLabels>
+                  <label>Sim</label>
+                  <input type='checkbox' />
+                  <label>Não</label>
+                  <input type='checkbox' />
+                </S.ContentLabels>
 
                 <hr />
-                <div className='d-flex justify-content-between mb-5'>
-                  <select name='' className='form-select' id=''>
+                <S.ContentLabels>
+                  <select name='' id=''>
                     <option value=''>Escolha uma nova vaga</option>
                   </select>
-                </div>
-                <span className='mb-5'>Clique em Enviar para concluir.</span>
+                </S.ContentLabels>
+                <span>Clique em Enviar para concluir.</span>
                 <br />
                 <Link
                   to='/seja-provedor/cadastro-provedor/agradecimento'
                   type='submit'
-                  className='btn-send'
                 >
                   Enviar
                 </Link>

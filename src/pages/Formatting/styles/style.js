@@ -186,3 +186,7 @@ export const ContentQuestion = styled.div`
     }
   }
 `
+
+export const ContentArticle = styled.article`
+  display: flex;
+`

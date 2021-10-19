@@ -84,3 +84,7 @@ export const FormContent = styled.form`
     }
   }
 `
+
+export const ContentLabels = styled.div`
+  display: flex;
+`

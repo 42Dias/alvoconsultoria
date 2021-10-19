@@ -42,51 +42,34 @@ export default function BeProvider() {
             <S.GridForm>
               <S.ContainerGrid>
                 <S.FormGroup>
-                  <input
-                    placeholder='Nome completo'
-                    type='text'
-                    id='nome'
-                    className='form-custom'
-                  />
+                  <input placeholder='Nome completo' type='text' id='nome' />
                 </S.FormGroup>
                 <S.FormGroup>
-                  <input
-                    placeholder='Email'
-                    type='text'
-                    id='Email'
-                    className='form-custom'
-                  />
+                  <input placeholder='Email' type='text' id='Email' />
                 </S.FormGroup>
                 <S.FormGroup>
                   <input
                     placeholder='Data de nascimento'
                     type='text'
                     id='data'
-                    className='form-custom'
                   />
                 </S.FormGroup>
                 <S.FormGroup>
-                  <input
-                    placeholder='Senha'
-                    type='text'
-                    id='senha'
-                    className='form-custom'
-                  />
+                  <input placeholder='Senha' type='text' id='senha' />
                 </S.FormGroup>
                 <S.FormGroup>
                   <input
                     placeholder='Confirmar senha'
                     type='text'
                     id='conf-senha'
-                    className='form-custom'
                   />
                 </S.FormGroup>
 
                 <S.SelectCity>
-                  <select name='' className='form-select'>
+                  <select name=''>
                     <option value=''>Cidade</option>
                   </select>
-                  <select name='' className='form-select'>
+                  <select name=''>
                     <option value=''>Estado</option>
                   </select>
                 </S.SelectCity>
@@ -94,7 +77,7 @@ export default function BeProvider() {
 
               <S.ContainerGrid>
                 <S.SelectSize>
-                  <select name='' className='form-select'>
+                  <select name=''>
                     <option value=''>Escolaridade</option>
                   </select>
                   <label>
@@ -104,10 +87,10 @@ export default function BeProvider() {
                 </S.SelectSize>
 
                 <S.SelectSize>
-                  <select name='' className='form-select'>
+                  <select name=''>
                     <option value=''>Universidade</option>
                   </select>
-                  <select name='' className='form-select'>
+                  <select name=''>
                     <option value=''>Curso</option>
                   </select>
                 </S.SelectSize>
@@ -115,7 +98,7 @@ export default function BeProvider() {
                   Para qual área de atuação você deseja se inscrever?
                 </label>
                 <S.SelectSize>
-                  <select name='' className='form-select'>
+                  <select name=''>
                     <option value=''>Seleciona sua área de atuação</option>
                   </select>
                   <label>
@@ -133,10 +116,7 @@ export default function BeProvider() {
               </S.ContainerGrid>
             </S.GridForm>
             <S.ContentBtn>
-              <Link
-                to='/seja-provedor/cadastro-provedor'
-                className='btn-patterns-submit'
-              >
+              <Link to='/seja-provedor/cadastro-provedor'>
                 Continuar cadastro
               </Link>
             </S.ContentBtn>
