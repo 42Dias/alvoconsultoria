@@ -6,7 +6,6 @@ export const Banner = styled.section`
   height: 584px;
   background-size: cover;
   background-position: center;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -15,13 +14,11 @@ export const Banner = styled.section`
 
 export const ContainerBanner = styled.div`
   height: 100%;
-
   img {
     position: absolute;
     right: 0;
     top: 345px;
   }
-
   @media (max-width: 768px) {
     img {
       display: none;
@@ -40,13 +37,11 @@ export const ContentBanner = styled.article`
     font-size: 35px;
     color: #ffffff;
   }
-
   h2 {
     z-index: 9999;
     font-size: 35px;
     color: #ffffff;
   }
-
   p {
     color: white;
     font-size: 16px;
@@ -54,20 +49,17 @@ export const ContentBanner = styled.article`
     font-weight: regular;
     padding: 20px 0;
   }
-
   @media (max-width: 768px) {
     h1 {
       font-size: 28px;
       text-align: center !important;
       width: 100% !important;
     }
-
     h2 {
       font-size: 24px;
       text-align: center !important;
       width: 100% !important;
     }
-
     p {
       font-size: 14px;
       text-align: center;
@@ -75,13 +67,11 @@ export const ContentBanner = styled.article`
       max-width: 350px !important;
     }
   }
-
   @media (max-width: 500px) {
     p {
       max-width: 340px !important;
     }
   }
-
   @media (max-width: 360px) {
     p {
       max-width: 280px !important;
@@ -113,20 +103,16 @@ export const FormattingStandards = styled.section`
     line-height: 45px;
     color: #d51072;
   }
-
   p {
     font-size: 16px;
     line-height: 150%;
-
     color: #666666;
   }
-
   @media (max-width: 768px) {
     h2 {
       font-size: 28px;
       text-align: center;
     }
-
     p {
       font-size: 14px;
       text-align: center;
@@ -142,30 +128,25 @@ export const FormattingStandardsContainer = styled.section`
     font-weight: bold;
     padding: 20px 0;
   }
-
   .padding-exemplos strong {
     color: rgba(102, 102, 102, 1);
     margin-top: 20px !important;
   }
-
   .col-lg-5 p {
     color: rgba(102, 102, 102, 1);
     font-size: 16px;
     padding: 20px 0;
   }
-
   @media (max-width: 768px) {
     .padding-exemplos strong {
       display: flex;
       align-items: center;
       justify-content: center;
     }
-
     .col-lg-5 p {
       font-size: 14px;
       text-align: center;
     }
-
     h2 {
       text-align: center;
     }
@@ -176,7 +157,6 @@ export const ContentBtn = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
   a {
     padding: 10px 20px;
     font-family: Poppins;
@@ -186,15 +166,12 @@ export const ContentBtn = styled.div`
     line-height: 30px;
     text-decoration: none;
     letter-spacing: -0.02em;
-
     color: #ffffff;
     background: #d51072;
     border: 0px solid;
     border-radius: 10px;
-
     margin: 50px 0 0 0;
   }
-
   a:hover {
     & {
       transition: 0.6s;
@@ -204,24 +181,22 @@ export const ContentBtn = styled.div`
   }
 `
 
+export const ArticleContainer = styled.article`
+  display: flex;
+`
+
+export const ArticleProvider = styled.article`
+  display: flex;
+`
+
+export const BoxExemples = styled.article`
+  display: flex;
+`
+
+export const ContentExemples = styled.article`
+  display: flex;
+`
+
 export const Button = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-  background: #f2f2f2;
-
-  a {
-    font-weight: 600;
-    font-size: 20px;
-
-    color: #ffffff;
-    background: #d51072;
-    border-radius: 10px;
-    text-decoration: none;
-
-    &:hover {
-      color: #fff;
-    }
-  }
 `

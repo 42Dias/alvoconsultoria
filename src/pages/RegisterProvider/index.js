@@ -11,7 +11,6 @@ export default function RegisterProvider() {
           <S.ContentBanner>
             <h1>Teste para seleção:</h1>
             <h2>Formatação de artigos</h2>
-            <span></span>
             <p>
               Na Alvo Consultoria, presamos pela excelência dos trabalhos
               prestados. Desta forma, ao prestarmos um serviço, observamos todos
@@ -62,10 +61,10 @@ export default function RegisterProvider() {
       <hr />
 
       <S.FormattingStandardsContainer>
-        <article className='m-0 col-sm-12 col-md-10 col-lg-12'>
+        <S.ArticleContainer>
           <h2>Exemplos</h2>
-          <div className='d-flex justify-content-between flex-xs-column flex-md-column flex-lg-row'>
-            <div className='p-0 col-sm-12  col-md-12 col-lg-5'>
+          <div>
+            <div>
               <strong>a) LIVRO</strong>
               <p>
                 Acha PN, Szyfres B. Zoonosis y enfermedades transmisibles
@@ -87,7 +86,7 @@ export default function RegisterProvider() {
                 Bahia, Brazil. Human Biology. 1982;54:329-41.
               </p>
             </div>
-            <div className='p-0 col-sm-12  col-md-12 col-lg-5'>
+            <div>
               <strong>a) LIVRO</strong>
               <p>
                 Acha PN, Szyfres B. Zoonosis y enfermedades transmisibles
@@ -110,7 +109,7 @@ export default function RegisterProvider() {
               </p>
             </div>
           </div>
-        </article>
+        </S.ArticleContainer>
       </S.FormattingStandardsContainer>
 
       <S.Button>
