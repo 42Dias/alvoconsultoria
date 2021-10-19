@@ -17,7 +17,7 @@ export const ContainerBanner = styled.div`
   img {
     position: absolute;
     right: 0;
-    top: 345px;
+    top: 341px;
   }
   @media (max-width: 768px) {
     img {
@@ -72,12 +72,12 @@ export const ContentBanner = styled.article`
   }
   @media (max-width: 500px) {
     p {
-      max-width: 340px !important;
+      max-width: 350px !important;
     }
   }
   @media (max-width: 360px) {
     p {
-      max-width: 280px !important;
+      max-width: 290px !important;
     }
   }
 `
@@ -201,4 +201,12 @@ export const ContentExemples = styled.article`
 
 export const Button = styled.div`
   display: flex;
+`
+
+export const GridExemplos = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `

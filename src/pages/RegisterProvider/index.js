@@ -59,134 +59,141 @@ export default function RegisterProvider() {
       </S.Container>
 
       <hr />
-
-      <S.FormattingStandardsContainer>
-        <S.ArticleContainer>
-          <h2>Exemplos</h2>
-          <div>
-            <div>
-              <strong>a) LIVRO</strong>
-              <p>
-                Acha PN, Szyfres B. Zoonosis y enfermedades transmisibles
-                comunes al hombre y a los animales. 2ª ed. Washington:
-                Organizacion Panamericana de la Salud; 1989.
-              </p>
-              <strong>b) CAPÍTULO DE LIVRO</strong>
-              <p>
-                Almeida JP, Rodriguez TM, Arellano JLP. Exantemas infecciosos
-                infantiles. In: Arellano JLP, Blasco AC, Sánchez MC, García JEL,
-                Rodríguez FM, Álvarez AM, editores. Guía de autoformación en
-                enfermedades infecciosas. Madrid: Panamericana; 1996. p.
-                1155-68.
-              </p>
-              <strong> c) ARTIGO</strong>
-              <p>
-                Azevêdo ES, Fortuna CMM, Silva KMC, Sousa MGF, Machado MA, Lima
-                AMVMD, et al. Spread and diversity of human populations in
-                Bahia, Brazil. Human Biology. 1982;54:329-41.
-              </p>
-            </div>
-            <div>
-              <strong>a) LIVRO</strong>
-              <p>
-                Acha PN, Szyfres B. Zoonosis y enfermedades transmisibles
-                comunes al hombre y a los animales. 2ª ed. Washington:
-                Organizacion Panamericana de la Salud; 1989.
-              </p>
-              <strong>b) CAPÍTULO DE LIVRO</strong>
-              <p>
-                Almeida JP, Rodriguez TM, Arellano JLP. Exantemas infecciosos
-                infantiles. In: Arellano JLP, Blasco AC, Sánchez MC, García JEL,
-                Rodríguez FM, Álvarez AM, editores. Guía de autoformación en
-                enfermedades infecciosas. Madrid: Panamericana; 1996. p.
-                1155-68.
-              </p>
-              <strong> c) ARTIGO</strong>
-              <p>
-                Azevêdo ES, Fortuna CMM, Silva KMC, Sousa MGF, Machado MA, Lima
-                AMVMD, et al. Spread and diversity of human populations in
-                Bahia, Brazil. Human Biology. 1982;54:329-41.
-              </p>
-            </div>
-          </div>
-        </S.ArticleContainer>
-      </S.FormattingStandardsContainer>
-
-      <S.FormattingStandardsContainer>
+      <S.Container>
         <S.FormattingStandards>
-          <S.ArticleProvider>
-            <h2>Exemplo de texto</h2>
-            <p>
-              Sangenis LFC, Oliveira EFR, Carreiro HJS, editores. Formação de
-              professores para uma educação plural e democrática: narrativas,
-              saberes, práticas e políticas educativas na América Latina
-              [Internet]. Rio de Janeiro: EdUERJ; 2018. [citado em 2019 set. 2].
-              Disponível
-              em:http://books.scielo.org/id/ngnq4/pdf/sangenis-9788575114841.pdf.
-              <br />
-              <br />
-              Não incluir nas Referências material não-publicado ou informação
-              pessoal. Nestes casos, assinalar no texto: (i) Antunes Filho FF,
-              Costa SD: dados não-publicados; ou (ii) Silva JA: comunicação
-              pessoal, 1997. Todavia, se o trabalho citado foi aceito para
-              publicação, incluí-lo entre as referências, citando os registros
-              de identificação necessários (autores, título do trabalho ou livro
-              e periódico ou editora), seguido da expressão latina In press e o
-              ano.
-              <br />
-              <br />
-              Quando o trabalho encaminhado para publicação tiver a forma de
-              relato de investigação epidemiológica, relato de fato histórico,
-              comunicação, resumo de trabalho final de curso de pós-graduação,
-              relatórios técnicos, resenha bibliográfica e carta ao editor, o(s)
-              autor(es) deve(m) utilizar linguagem objetiva e concisa, com
-              informações introdutórias curtas e precisas, delimitando o
-              problema ou a questão objeto da investigação. Seguir as
-              orientações para referências, ilustrações e tabelas.
-              <br />
-              <br />
-              As notas explicativas são permitidas, desde que em pequeno número,
-              e devem ser ordenadas por letras minúsculas em sobrescrito.
-              <br />
-              TABELAS, GRÁFICOS E FIGURAS
-              <br />
-              Obrigatoriamente, os arquivos das ilustrações (quadros, gráficos,
-              fluxogramas, fotografias, organogramas etc.) e tabelas devem
-              encaminhados em arquivo independentes; suas páginas não devem ser
-              numeradas. Estes arquivos devem ser compatíveis com processador de
-              texto “Word for Windows” (formatos: PICT, TIFF, GIF, BMP).
-              <br />
-              O número de ilustrações e tabelas deve ser o menor possível.
-              <br />
-              Na seção resultados, as ilustrações e tabelas devem ser numeradas
-              com algarismos arábicos, por ordem de aparecimento no texto, e seu
-              tipo e número destacados em negrito (e.g. “[...] na Tabela 2 as
-              medidas [...]).
-              <br />
-              No corpo das tabelas, não utilizar linhas verticais nem
-              horizontais; os quadros devem ser fechados.
-              <br />
-              Os títulos das ilustrações e tabelas devem ser objetivos, situar o
-              leitor sobre o conteúdo e informar a abrangência geográfica e
-              temporal dos dados, segundo Normas de Apresentação Tabular do IBGE
-              (e.g.: Gráfico 2. Número de casos de AIDS por região geográfica –
-              Brasil – 1986-1997).
-              <br />
-              Ilustrações e tabelas reproduzidas de outras fontes já publicadas
-              devem indicar esta condição após o título.
-              <br />
-              (Baseado nas normas de formatação da Revista Baiana de saúde
-              pública)
-            </p>
-          </S.ArticleProvider>
+          <S.FormattingStandardsContainer>
+            <S.ArticleContainer>
+              <h2>Exemplos</h2>
+              <S.GridExemplos>
+                <div>
+                  <strong>a) LIVRO</strong>
+                  <p>
+                    Acha PN, Szyfres B. Zoonosis y enfermedades transmisibles
+                    comunes al hombre y a los animales. 2ª ed. Washington:
+                    Organizacion Panamericana de la Salud; 1989.
+                  </p>
+                  <strong>b) CAPÍTULO DE LIVRO</strong>
+                  <p>
+                    Almeida JP, Rodriguez TM, Arellano JLP. Exantemas
+                    infecciosos infantiles. In: Arellano JLP, Blasco AC, Sánchez
+                    MC, García JEL, Rodríguez FM, Álvarez AM, editores. Guía de
+                    autoformación en enfermedades infecciosas. Madrid:
+                    Panamericana; 1996. p. 1155-68.
+                  </p>
+                  <strong> c) ARTIGO</strong>
+                  <p>
+                    Azevêdo ES, Fortuna CMM, Silva KMC, Sousa MGF, Machado MA,
+                    Lima AMVMD, et al. Spread and diversity of human populations
+                    in Bahia, Brazil. Human Biology. 1982;54:329-41.
+                  </p>
+                </div>
+                <div>
+                  <strong>a) LIVRO</strong>
+                  <p>
+                    Acha PN, Szyfres B. Zoonosis y enfermedades transmisibles
+                    comunes al hombre y a los animales. 2ª ed. Washington:
+                    Organizacion Panamericana de la Salud; 1989.
+                  </p>
+                  <strong>b) CAPÍTULO DE LIVRO</strong>
+                  <p>
+                    Almeida JP, Rodriguez TM, Arellano JLP. Exantemas
+                    infecciosos infantiles. In: Arellano JLP, Blasco AC, Sánchez
+                    MC, García JEL, Rodríguez FM, Álvarez AM, editores. Guía de
+                    autoformación en enfermedades infecciosas. Madrid:
+                    Panamericana; 1996. p. 1155-68.
+                  </p>
+                  <strong> c) ARTIGO</strong>
+                  <p>
+                    Azevêdo ES, Fortuna CMM, Silva KMC, Sousa MGF, Machado MA,
+                    Lima AMVMD, et al. Spread and diversity of human populations
+                    in Bahia, Brazil. Human Biology. 1982;54:329-41.
+                  </p>
+                </div>
+              </S.GridExemplos>
+            </S.ArticleContainer>
+          </S.FormattingStandardsContainer>
         </S.FormattingStandards>
-      </S.FormattingStandardsContainer>
+      </S.Container>
 
-      <S.Button>
+      <S.Container>
+        <S.FormattingStandardsContainer>
+          <S.FormattingStandards>
+            <S.ArticleProvider>
+              <h2>Exemplo de texto</h2>
+              <p>
+                Sangenis LFC, Oliveira EFR, Carreiro HJS, editores. Formação de
+                professores para uma educação plural e democrática: narrativas,
+                saberes, práticas e políticas educativas na América Latina
+                [Internet]. Rio de Janeiro: EdUERJ; 2018. [citado em 2019 set.
+                2]. Disponível
+                em:http://books.scielo.org/id/ngnq4/pdf/sangenis-9788575114841.pdf.
+                <br />
+                <br />
+                Não incluir nas Referências material não-publicado ou informação
+                pessoal. Nestes casos, assinalar no texto: (i) Antunes Filho FF,
+                Costa SD: dados não-publicados; ou (ii) Silva JA: comunicação
+                pessoal, 1997. Todavia, se o trabalho citado foi aceito para
+                publicação, incluí-lo entre as referências, citando os registros
+                de identificação necessários (autores, título do trabalho ou
+                livro e periódico ou editora), seguido da expressão latina In
+                press e o ano.
+                <br />
+                <br />
+                Quando o trabalho encaminhado para publicação tiver a forma de
+                relato de investigação epidemiológica, relato de fato histórico,
+                comunicação, resumo de trabalho final de curso de pós-graduação,
+                relatórios técnicos, resenha bibliográfica e carta ao editor,
+                o(s) autor(es) deve(m) utilizar linguagem objetiva e concisa,
+                com informações introdutórias curtas e precisas, delimitando o
+                problema ou a questão objeto da investigação. Seguir as
+                orientações para referências, ilustrações e tabelas.
+                <br />
+                <br />
+                As notas explicativas são permitidas, desde que em pequeno
+                número, e devem ser ordenadas por letras minúsculas em
+                sobrescrito.
+                <br />
+                TABELAS, GRÁFICOS E FIGURAS
+                <br />
+                Obrigatoriamente, os arquivos das ilustrações (quadros,
+                gráficos, fluxogramas, fotografias, organogramas etc.) e tabelas
+                devem encaminhados em arquivo independentes; suas páginas não
+                devem ser numeradas. Estes arquivos devem ser compatíveis com
+                processador de texto “Word for Windows” (formatos: PICT, TIFF,
+                GIF, BMP).
+                <br />
+                O número de ilustrações e tabelas deve ser o menor possível.
+                <br />
+                Na seção resultados, as ilustrações e tabelas devem ser
+                numeradas com algarismos arábicos, por ordem de aparecimento no
+                texto, e seu tipo e número destacados em negrito (e.g. “[...] na
+                Tabela 2 as medidas [...]).
+                <br />
+                No corpo das tabelas, não utilizar linhas verticais nem
+                horizontais; os quadros devem ser fechados.
+                <br />
+                Os títulos das ilustrações e tabelas devem ser objetivos, situar
+                o leitor sobre o conteúdo e informar a abrangência geográfica e
+                temporal dos dados, segundo Normas de Apresentação Tabular do
+                IBGE (e.g.: Gráfico 2. Número de casos de AIDS por região
+                geográfica – Brasil – 1986-1997).
+                <br />
+                Ilustrações e tabelas reproduzidas de outras fontes já
+                publicadas devem indicar esta condição após o título.
+                <br />
+                (Baseado nas normas de formatação da Revista Baiana de saúde
+                pública)
+              </p>
+            </S.ArticleProvider>
+          </S.FormattingStandards>
+        </S.FormattingStandardsContainer>
+      </S.Container>
+
+      <S.ContentBtn>
         <Link to='/seja-provedor/cadastro-provedor/formatacao'>
           Próximo passo
         </Link>
-      </S.Button>
+      </S.ContentBtn>
     </>
   )
 }
