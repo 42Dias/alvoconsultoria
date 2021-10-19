@@ -29,7 +29,7 @@ export default function RegisterProvider() {
 
       <S.Container>
         <S.FormattingStandards>
-          <S.FormattingStandards>
+          <S.FormattingStandardsContainer>
             <h2>Normas de Formatação</h2>
             <p>
               Anexar em Documento Original o texto completo: iniciar com o
@@ -55,7 +55,7 @@ export default function RegisterProvider() {
               Quando os autores forem mais de seis (6), indicar apenas os seis
               primeiros, acrescentando a expressão et al.
             </p>
-          </S.FormattingStandards>
+          </S.FormattingStandardsContainer>
         </S.FormattingStandards>
       </S.Container>
 
@@ -113,14 +113,11 @@ export default function RegisterProvider() {
         </article>
       </S.FormattingStandardsContainer>
 
-      <div className='d-flex align-items-center justify-content-center proximo-passo'>
-        <Link
-          to='/seja-provedor/cadastro-provedor/formatacao'
-          className='btn-patterns-next'
-        >
+      <S.Button>
+        <Link to='/seja-provedor/cadastro-provedor/formatacao'>
           Próximo passo
         </Link>
-      </div>
+      </S.Button>
     </>
   )
 }
