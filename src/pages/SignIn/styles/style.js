@@ -43,11 +43,12 @@ export const Card = styled.div`
   );
   border-radius: 20px;
   padding: 50px;
-
+  width: 500px;
+  height: 500px;
   h2 {
     text-align: center;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 45px;
     color: #000000;
   }
@@ -56,6 +57,38 @@ export const Card = styled.div`
     color: #2f2f2f;
     font-size: 15px;
     text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    width: 300px;
+    height: 500px;
+    padding: 30px 30px;
+    h2 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    input {
+      font-size: 14px;
+      color: rgba(60, 60, 67, 0.3);
+      padding: 2px 0 2px 0;
+      width: 100% !important;
+    }
+
+    form button {
+      margin: 12px auto;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    width: 300px;
+    height: 490px;
+    padding: 10px 10px;
+    margin-top: 40px;
   }
 `
 
@@ -90,10 +123,27 @@ export const Form = styled.form`
     font-size: 20px;
   }
 
+  @media (max-width: 768px) {
+    button {
+      color: white;
+      width: 180px;
+      height: 48px;
+      background: #d51072;
+      margin-top: 51px;
+      font-size: 14px;
+    }
+  }
+
   a {
     text-decoration: none;
     color: #070707;
     font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    a {
+      font-size: 14px;
+    }
   }
 
   strong {
@@ -110,7 +160,7 @@ export const ForgotPassword = styled.div`
     text-decoration: none;
     margin-left: auto;
     font-size: 13px;
-    margin-top: 5px;
+    margin-top: 2px;
   }
 
   label {
@@ -119,9 +169,26 @@ export const ForgotPassword = styled.div`
     font-size: 13px;
   }
 
+  @media (max-width: 768px) {
+    a {
+      margin-left: 0;
+    }
+
+    label {
+      margin-left: 0;
+    }
+  }
+
   input {
     width: 20px;
     height: 20px;
     margin: 5px 2px 3px 4px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
   }
 `

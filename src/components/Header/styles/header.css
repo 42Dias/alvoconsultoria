@@ -4,8 +4,8 @@ header {
   justify-content: space-between;
   height: 70px;
   padding: 0 20px;
+  margin: 0 auto;
 }
-
 
 nav li {
   margin-left: 30px;
@@ -88,7 +88,7 @@ a.btn-patterns:hover {
 }
 
 a.btn-patterns:focus {
-  color: rgb(138, 7, 72);
+  color: white;
 }
 
 .btn-patterns .btn-patterns:hover {
@@ -138,11 +138,11 @@ a.create-account {
 
 a.create-account:hover {
   transition: .6s;
-  color: white;
+  color: #b10c5e;
 }
 
 a.create-account:focus {
-  color: white;
+  color: #c00f67;
 }
 
 @media (max-width: 768px) {

@@ -57,8 +57,10 @@ export const Title = styled.div`
 
   p {
     max-width: 700px;
-    font-size: 20px;
+    font-size: 16px;
     color: #fff;
+    padding: 10px 0;
+    font-weight: regular;
   }
 
   a {

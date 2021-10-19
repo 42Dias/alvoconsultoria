@@ -42,7 +42,8 @@ export const Card = styled.div`
   );
   border-radius: 20px;
   padding: 50px;
-
+  width: 500px;
+  height: 500px;
   h2 {
     text-align: center;
     font-family: Poppins;
@@ -57,6 +58,18 @@ export const Card = styled.div`
     color: #666666;
     font-size: 15px;
     text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    width: 300px;
+    height: 400px;
+    padding: 30px 30px;
+    h2 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 14px;
+    }
   }
 `
 
@@ -82,5 +95,19 @@ export const Form = styled.form`
     border-radius: 10px;
     border: 0px solid;
     margin-top: 55px;
+  }
+
+  @media (max-width: 768px) {
+    button {
+      color: white;
+      width: 200px;
+      height: 48px;
+      background: #d51072;
+      border-radius: 10px;
+      border: none;
+      margin-top: 53px;
+      margin: 0 auto;
+      font-size: 14px;
+    }
   }
 `

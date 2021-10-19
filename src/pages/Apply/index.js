@@ -1,48 +1,43 @@
 import { Link } from 'react-router-dom'
-import './styles/apply.css'
+import * as S from './styles/style'
+import * as C from './../../styles/global'
 
 export default function Apply() {
   return (
-    <>
-      <div className='containerApply'>
-        <div className='bg-apply'>
-          <div className='container'>
-            <section className='content-apply-form '>
-              <div className='card p-5'>
-                <h2 className='title-card'>
-                  Gostaria de se candidatar <br /> para outra vaga?
-                </h2>
-                <form
-                  action=''
-                  className='d-flex flex-column align-items-center'
-                >
-                  <div className='d-flex align-items-center justify-content-center mt-4'>
-                    <label className='mb-0 mr-2'>Sim</label>
-                    <input type='checkbox' className='mr-2' />
-                    <label className='mb-0 mr-2'>Não</label>
-                    <input type='checkbox' className='mr-2' />
-                  </div>
+    <S.ContainerApply>
+      <S.BgApply>
+        <C.Container>
+          <S.ContentApplyForm>
+            <S.Card>
+              <h2>Gostaria de se candidatar para outra vaga?</h2>
+              <S.FormContent>
+                <div className='d-flex align-items-center justify-content-center mt-4'>
+                  <label className='mb-0 mr-2'>Sim</label>
+                  <input type='checkbox' className='mr-2' />
+                  <label className='mb-0 mr-2'>Não</label>
+                  <input type='checkbox' className='mr-2' />
+                </div>
 
-                  <hr />
-                  <div className='d-flex justify-content-between mb-5'>
-                    <select name='' className='form-select-login' id=''>
-                      <option value=''>Escolha uma nova vaga</option>
-                    </select>
-                  </div>
-                  <span className='mb-5'>Clique em Enviar para concluir.</span>
-                  <Link
-                    to='/seja-provedor/cadastro-provedor/agradecimento'
-                    type='submit'
-                    className='btn-submit'
-                  >
-                    Confirmar cadastro
-                  </Link>
-                </form>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
-    </>
+                <hr />
+                <div className='d-flex justify-content-between mb-5'>
+                  <select name='' className='form-select' id=''>
+                    <option value=''>Escolha uma nova vaga</option>
+                  </select>
+                </div>
+                <span className='mb-5'>Clique em Enviar para concluir.</span>
+                <br />
+                <Link
+                  to='/seja-provedor/cadastro-provedor/agradecimento'
+                  type='submit'
+                  className='btn-send'
+                >
+                  Enviar
+                </Link>
+              </S.FormContent>
+            </S.Card>
+          </S.ContentApplyForm>
+        </C.Container>
+      </S.BgApply>
+    </S.ContainerApply>
   )
 }
